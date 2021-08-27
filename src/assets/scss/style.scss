@@ -1,9 +1,47 @@
-@import '../../../node_modules/normalize-scss/sass/normalize/import-now';
-@import '../../../node_modules/normalize-scss/sass/normalize/normalize-mixin';
-@import '../../../node_modules/normalize-scss/sass/normalize/variables';
-@import '../../../node_modules/normalize-scss/sass/normalize/vertical-rhythm';
-
-
-h1{
-    color: red;
+@import "../../../node_modules/normalize-scss/sass/normalize/import-now";
+@import "../../../node_modules/normalize-scss/sass/normalize/normalize-mixin";
+@import "../../../node_modules/normalize-scss/sass/normalize/variables";
+@import "../../../node_modules/normalize-scss/sass/normalize/vertical-rhythm";
+ @import "./fonts.scss";
+$dark-shade-100: #1f2041;
+$dark-shade-75: rgba(31, 32, 65, 0.75);
+$dark-shade-50: rgba(31, 32, 65, 0.5);
+$dark-shade-25: rgba(31, 32, 65, 0.25);
+$dark-shade-5: rgba(31, 32, 65, 0.05);
+$purple: #bc9cff;
+$Green: #6fcf97;
+$container-size:1160px;
+body {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+}
+h3 {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+.container{
+    margin: 0 auto;
+    max-width: $container-size;
+}
+span {
+  color: $dark-shade-75;
 }

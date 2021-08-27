@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"script/script.js":[function(require,module,exports) {
+},{"./..\\fonts\\montserrat\\Montserrat-Bold.ttf":[["Montserrat-Bold.9b37bed2.ttf","assets/fonts/montserrat/Montserrat-Bold.ttf"],"assets/fonts/montserrat/Montserrat-Bold.ttf"],"./..\\fonts\\montserrat\\Montserrat-Black.ttf":[["Montserrat-Black.5e232293.ttf","assets/fonts/montserrat/Montserrat-Black.ttf"],"assets/fonts/montserrat/Montserrat-Black.ttf"],"./..\\fonts\\montserrat\\Montserrat-ExtraLight.ttf":[["Montserrat-ExtraLight.aa19a70d.ttf","assets/fonts/montserrat/Montserrat-ExtraLight.ttf"],"assets/fonts/montserrat/Montserrat-ExtraLight.ttf"],"./..\\fonts\\montserrat\\Montserrat-Light.ttf":[["Montserrat-Light.6e0850ef.ttf","assets/fonts/montserrat/Montserrat-Light.ttf"],"assets/fonts/montserrat/Montserrat-Light.ttf"],"./..\\fonts\\montserrat\\Montserrat-Medium.ttf":[["Montserrat-Medium.17a8942b.ttf","assets/fonts/montserrat/Montserrat-Medium.ttf"],"assets/fonts/montserrat/Montserrat-Medium.ttf"],"./..\\fonts\\montserrat\\Montserrat-MediumItalic.ttf":[["Montserrat-MediumItalic.38f4eca1.ttf","assets/fonts/montserrat/Montserrat-MediumItalic.ttf"],"assets/fonts/montserrat/Montserrat-MediumItalic.ttf"],"./..\\fonts\\montserrat\\Montserrat-Regular.ttf":[["Montserrat-Regular.0f79340e.ttf","assets/fonts/montserrat/Montserrat-Regular.ttf"],"assets/fonts/montserrat/Montserrat-Regular.ttf"],"./..\\fonts\\montserrat\\Montserrat-SemiBold.ttf":[["Montserrat-SemiBold.74964866.ttf","assets/fonts/montserrat/Montserrat-SemiBold.ttf"],"assets/fonts/montserrat/Montserrat-SemiBold.ttf"],"./..\\fonts\\montserrat\\Montserrat-SemiBoldItalic.ttf":[["Montserrat-SemiBoldItalic.364a63b2.ttf","assets/fonts/montserrat/Montserrat-SemiBoldItalic.ttf"],"assets/fonts/montserrat/Montserrat-SemiBoldItalic.ttf"],"./..\\fonts\\montserrat\\Montserrat-ThinItalic.ttf":[["Montserrat-ThinItalic.faa22059.ttf","assets/fonts/montserrat/Montserrat-ThinItalic.ttf"],"assets/fonts/montserrat/Montserrat-ThinItalic.ttf"],"./..\\fonts\\montserrat\\Montserrat-Thin.ttf":[["Montserrat-Thin.aa4e0d6f.ttf","assets/fonts/montserrat/Montserrat-Thin.ttf"],"assets/fonts/montserrat/Montserrat-Thin.ttf"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"script/script.js":[function(require,module,exports) {
 "use strict";
 
 require("../assets/scss/style.scss");
@@ -225,7 +225,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55138" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49333" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

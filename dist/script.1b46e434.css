@@ -402,8 +402,46 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/Montserrat-Bold.9b37bed2.ttf") format("truetype"), url("/Montserrat-Black.5e232293.ttf") format("truetype"), url("/Montserrat-ExtraLight.aa19a70d.ttf") format("truetype"), url("/Montserrat-Light.6e0850ef.ttf") format("truetype"), url("/Montserrat-ExtraLight.aa19a70d.ttf") format("truetype"), url("/Montserrat-Medium.17a8942b.ttf") format("truetype"), url("/Montserrat-MediumItalic.38f4eca1.ttf") format("truetype") url("/Montserrat-Regular.0f79340e.ttf") format("truetype"), url("/Montserrat-SemiBold.74964866.ttf") format("truetype"), url("/Montserrat-SemiBoldItalic.364a63b2.ttf") format("truetype"), url("/Montserrat-ThinItalic.faa22059.ttf") format("truetype"), url("/Montserrat-Thin.aa4e0d6f.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+  font-weight: normal; }
+
+body {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0em; }
+
 h1 {
-  color: red; }
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px; }
+
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px; }
+
+h3 {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1160px; }
+
+span {
+  color: rgba(31, 32, 65, 0.75); }
 
 
 /*# sourceMappingURL=/script.1b46e434.css.map */

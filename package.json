@@ -1,0 +1,18 @@
+{
+  "name": "html-tasck",
+  "version": "1.0.0",
+  "description": "MetaLamp Frontend 2 step education",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html -p 4200 --open",
+    "build": "parcel build ./src/index.html"
+  },
+  "author": "kross",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.7.1",
+    "node-sass": "^6.0.1",
+    "normalize-scss": "^7.0.1",
+    "normalize.css": "^8.0.1"
+  }
+}

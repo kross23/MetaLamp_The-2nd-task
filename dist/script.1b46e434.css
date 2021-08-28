@@ -404,10 +404,24 @@ template {
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("/Montserrat-Bold.9b37bed2.ttf") format("truetype"), url("/Montserrat-Black.5e232293.ttf") format("truetype"), url("/Montserrat-ExtraLight.aa19a70d.ttf") format("truetype"), url("/Montserrat-Light.6e0850ef.ttf") format("truetype"), url("/Montserrat-ExtraLight.aa19a70d.ttf") format("truetype"), url("/Montserrat-Medium.17a8942b.ttf") format("truetype"), url("/Montserrat-MediumItalic.38f4eca1.ttf") format("truetype") url("/Montserrat-Regular.0f79340e.ttf") format("truetype"), url("/Montserrat-SemiBold.74964866.ttf") format("truetype"), url("/Montserrat-SemiBoldItalic.364a63b2.ttf") format("truetype"), url("/Montserrat-ThinItalic.faa22059.ttf") format("truetype"), url("/Montserrat-Thin.aa4e0d6f.ttf") format("truetype");
   font-style: normal;
-  font-weight: bold;
-  font-weight: normal; }
+  font-weight: 700;
+  font-display: swap;
+  src: url(/Montserrat-ExtraBold.7da6219e.ttf); }
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/Montserrat-Bold.9b37bed2.ttf), url(/Montserrat-Bold.b2197310.eot), url(/Montserrat-Bold.fdf42c85.svg), url(/Montserrat-Bold.9aad7c46.woff); }
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/Montserrat-Regular.0f79340e.ttf), url(/Montserrat-Regular.0995919b.svg), url(/Montserrat-Regular.c7ae4452.woff), url(/Montserrat-SemiBold.0dcf99fc.otf); }
 
 body {
   font-family: "Montserrat";
@@ -416,32 +430,99 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: 0em; }
+  letter-spacing: 0em;
+  color: rgba(31, 32, 65, 0.75); }
 
 h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
-  line-height: 29px; }
+  line-height: 29px;
+  color: #1f2041; }
 
 h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
-  line-height: 23px; }
+  line-height: 23px;
+  color: #1f2041; }
 
 h3 {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #1f2041; }
 
 .container {
   margin: 0 auto;
   max-width: 1160px; }
 
-span {
-  color: rgba(31, 32, 65, 0.75); }
+.row {
+  display: flex;
+  align-items: center; }
+
+.block {
+  display: block;
+  width: 400px; }
+
+.header .header__row {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .header .header__row .header__logo {
+    margin-top: 2px; }
+  .header .header__row .header__menu {
+    display: block;
+    margin-right: 20px;
+    margin-left: auto; }
+    .header .header__row .header__menu ul {
+      width: 100%; }
+      .header .header__row .header__menu ul li {
+        display: inline;
+        margin: 0 10px; }
+        .header .header__row .header__menu ul li span {
+          color: rgba(31, 32, 65, 0.5);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 17px;
+          letter-spacing: 0em;
+          text-align: left; }
+          .header .header__row .header__menu ul li span:hover {
+            color: rgba(31, 32, 65, 0.75);
+            font-style: normal;
+            font-weight: 700; }
+        .header .header__row .header__menu ul li img {
+          margin-left: 5px; }
+  .header .header__row .header__button {
+    display: inline-block; }
+    .header .header__row .header__button .header__button-in {
+      display: inline-block;
+      width: 87px;
+      height: 34px;
+      border-radius: 22px;
+      box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+      border: solid 2px #bc9cff;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: #bc9cff; }
+    .header .header__row .header__button .header__button-reg {
+      display: inline-block;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      border-radius: 22px;
+      width: 196px;
+      height: 34px;
+      color: #ffffff;
+      margin-left: 20px;
+      border: solid 2px #bc9cff;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase; }
 
 
 /*# sourceMappingURL=/script.1b46e434.css.map */

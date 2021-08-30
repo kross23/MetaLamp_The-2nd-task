@@ -1,0 +1,79 @@
+@import "../../scss/variable.scss";
+.header{
+    .header__row{
+        height:70px ;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .header__logo{
+margin-top: 2px;
+        }
+        .header__menu{
+         
+         display: block;
+         margin-right: 20px;
+         margin-left: auto;
+           ul{
+               width: 100%;
+               li{
+                   display: inline;
+                   margin: 0 10px;
+                    span{
+                    color: $dark-shade-50;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 17px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    &:hover{
+                        color: $dark-shade-75;
+                        font-style: normal;
+                         font-weight: 700;
+                         
+                        // font-weight: 400;
+                    }
+                   }
+                   & img{
+                    margin-left: 5px;
+                   }
+                  
+               }
+           }
+        }
+        .header__button{
+            display: inline-block;
+            .header__button-in{
+                display: inline-block;
+                width: 87px;
+                height: 34px;
+                border-radius: 22px;
+                box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+				border: solid 2px $purple;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: uppercase;
+                color: $purple;
+                font-family: "Montserrat";
+            
+            }
+            .header__button-reg{
+                display: inline-block;
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                border-radius: 22px;
+                width: 196px;
+                height: 34px;
+                color: #ffffff;
+                margin-left: 20px;
+				border: solid 2px $purple;
+                font-family: "Montserrat";
+				font-weight: bold;
+				font-size: 12px;
+				line-height: 15px;
+				text-transform: uppercase;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,110 @@
+@import "../../scss/variable.scss";
+.footer{
+
+    .footer__row{
+        padding-top: 104px;
+        display: flex;
+        
+       
+        .block{ 
+           display: block;
+            //width: 148px;
+            height: 168px;
+            &:first-child{
+                height: 132px;
+                margin-right: 40px;
+                p{
+                    margin-top: 10px;
+                    width: 260px;
+                }
+            }
+            &:last-child{
+                display: flex;
+                flex-direction: column;
+                height: 148px;
+                margin-left: 22px;
+               .footer_title{
+                width: 260px;
+                margin-top: 4px;
+                margin-bottom: 4px;
+                 font-style: normal;
+                 font-weight: bold;
+                 font-size: 12px;
+                 line-height: 15px;
+                 text-transform: uppercase;
+                 color: $dark-shade-100;
+               }
+               p{
+                   margin-bottom: 20px;
+               }
+               input{
+                width: 260px;
+                height: 44px;
+                border: 1px solid rgba(31, 32, 65, 0.25);
+                box-sizing: border-box;
+                border-radius: 4px;
+               }
+            }
+            &:nth-child(3){
+              
+                margin-left: 22px;
+                margin-right: 24px;
+            
+            }
+          
+
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 4px;
+                    margin-bottom: 0;
+                    max-width: 150px;
+                    list-style-type:none;
+                    margin-left: 0;
+                    padding-left: 0;
+                    
+
+                    li{
+                        margin-bottom: 20px;
+                        font-size: 14px;
+                        line-height: 17px;
+                        display: inline;
+                        width: 149px;
+                        &:first-child{
+                            
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 15px;
+                            text-transform: uppercase;
+                            color: $dark-shade-100;
+                            
+                        }
+                    }
+                }
+            
+        }
+        .line{
+            height: 2px;
+            width: 100%;
+            background-color: $dark-shade-75;
+        }
+        .row__line{
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                display: inline-block;
+            }
+            .icon{
+                display: inline-block;
+            
+                img{
+                    margin-left: 20px;
+                }
+                
+            }
+        }
+    }
+}

@@ -5,32 +5,16 @@ html(lang="en")
 		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
 		title Pug
 	body
-		section.header
-			div.container
-				div.header__row
-					div.header__logo
-						img(src="./assets/img/Logo(1).svg", alt="logo")
-					div.header__menu
-						ul
-							li: span О нас
-							li: span Услуги
-								img(src="./assets/img/expand_more.svg", alt="вакансии")
-							li: span Вакансии
-							li: span Новости
-							li: span Соглашения
-								img(src="./assets/img/expand_more.svg", alt="соглашения")
-					div.header__button
-						button.header__button-in войти
-						button.header__button-reg зарегистрироваться
+		include ./assets/components/header/header.pug
 
-				h1 h1 - This one is the sub-section or
-					br
-					|	 title
-				h2 h2 - Next one is the item title widget
-					br
-					|	inside widgets
-				h3 h3 - This is a label or CTA text
-				span body This is the body text which is used for most
-				br 
-				| of the design, like paragraphs, lists, etc.
+		include ./assets/components/footer/footer.pug
+		
+
+
+
+
+
+
+
+
 		script(src="./script/script.js")

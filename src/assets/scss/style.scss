@@ -2,10 +2,12 @@
 @import "../../../node_modules/normalize-scss/sass/normalize/normalize-mixin";
 @import "../../../node_modules/normalize-scss/sass/normalize/variables";
 @import "../../../node_modules/normalize-scss/sass/normalize/vertical-rhythm";
- @import "./fonts.scss";
- @import "../scss/variable.scss";
- @import "../components/header/header.scss";
- @import "../components/footer/footer.scss";
+@import "../components/header/header.scss";
+@import "../components/main/main.scss";
+@import "../components/footer/footer.scss";
+@import "./fonts.scss";
+@import "../scss/variable.scss";
+
 body {
     font-family: "Montserrat";
     font-style: normal;
@@ -16,7 +18,7 @@ body {
     letter-spacing: 0em;
     color: $dark-shade-75;
     height: 100%;
-}
+} 
 h1 {
   font-style: normal;
   font-weight: bold;
@@ -32,11 +34,14 @@ h2 {
   color: $dark-shade-100;
 }
 h3 {
+   display: inline-block;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
     color: $dark-shade-100;
+    margin-bottom: 5px;
+    margin-top: 0;
 }
 .container{
     margin: 0 auto;

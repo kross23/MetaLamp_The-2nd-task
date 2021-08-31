@@ -1,0 +1,141 @@
+@import "../../scss/variable.scss";
+@mixin input-placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder {/* Firefox 18- */
+    @content;
+  }
+  ::-moz-placeholder {/* Firefox 19+ */
+    @content;
+  }
+  :-ms-input-placeholder {  
+    @content;
+  }
+}
+ 
+/* применение */
+
+.main{
+
+    .main__row{
+        display: flex;
+        justify-content: space-between;
+        .main__column{
+            display: block;
+            width: 320px;
+            .item_inpunt{ 
+              display: inline-flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              align-items: center;
+
+                span{
+                    display: inline-block;
+                    margin-left: auto;
+                   
+                }
+              input{
+                  display: block;
+                  width: 320px;
+                  height: 44px;
+                  border: 1px solid rgba(31, 32, 65, 0.25);
+                  box-sizing: border-box;
+                  border-radius: 4px;
+                  padding-left: 15px;
+                  margin-bottom: 22px;
+                    &:hover{
+                        border: 1px solid $dark-shade-50;
+                    }
+              }
+                @include input-placeholder {
+                    color: $dark-shade-25;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 18px;
+                    
+                }
+                button.drop__doun{
+                 text-align: left;
+                  border: 1px solid $dark-shade-25;
+                  box-sizing: border-box;
+                  border-radius: 4px;
+                  width: 320px;
+                  height: 44px;
+                  background: #fff;
+                  margin-bottom: 22px;
+                    span{
+                      margin-left: 15px;
+                    }
+                  img{
+                    margin-right: 5px;
+                    margin-left: 55%;
+                  }
+                }
+
+              .date_dropdown{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                h3:nth-child(2) {
+                  margin-right: 32px;
+                }
+               
+                button.date_drop__down{
+                  display: inline-block;
+                  width: 150px;
+                  height: 44px;
+                  background: #FFFFFF;
+                  border: 1px solid $dark-shade-25;
+                  border-radius: 4px;
+                  margin-bottom: 40px;
+
+                  span{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $dark-shade-75;
+                  }
+                  img{
+                    margin-right: 5px;
+                    margin-left: 23%;
+                  }
+                }
+              }
+              .filter_date_dropdown{
+
+                button.lilter__date, input {
+                  position: relative;
+                  width: 266px;
+                  height: 44px;
+                  background: #FFFFFF;
+                  border: 1px solid $dark-shade-25;
+                  border-radius: 4px;
+                  text-align: left;
+                  margin-bottom: 40px;
+                  span{
+                    margin-left: 15px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 24px;
+                  }
+                  img{
+                    position: absolute;
+                      right: 10px;
+                      top: 17px;
+                  }
+                }
+              }
+            }
+            .checkbox_buttons{
+              display: flex;
+              flex-direction: column;
+            }
+        }
+        
+    }
+}

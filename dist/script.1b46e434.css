@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
        ========================================================================== */
@@ -402,27 +403,6 @@ template {
 [hidden] {
   display: none; }
 
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/Montserrat-ExtraBold.7da6219e.ttf); }
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: bold;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/Montserrat-Bold.9b37bed2.ttf), url(/Montserrat-Bold.b2197310.eot), url(/Montserrat-Bold.fdf42c85.svg), url(/Montserrat-Bold.9aad7c46.woff); }
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/Montserrat-Regular.0f79340e.ttf), url(/Montserrat-Regular.0995919b.svg), url(/Montserrat-Regular.c7ae4452.woff), url(/Montserrat-SemiBold.0dcf99fc.otf); }
-
 .header .header__row {
   height: 70px;
   display: flex;
@@ -482,6 +462,119 @@ template {
       font-size: 12px;
       line-height: 15px;
       text-transform: uppercase; }
+
+/* применение */
+.main .main__row {
+  display: flex;
+  justify-content: space-between; }
+  .main .main__row .main__column {
+    display: block;
+    width: 320px; }
+    .main .main__row .main__column .item_inpunt {
+      display: inline-flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center; }
+      .main .main__row .main__column .item_inpunt span {
+        display: inline-block;
+        margin-left: auto; }
+      .main .main__row .main__column .item_inpunt input {
+        display: block;
+        width: 320px;
+        height: 44px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding-left: 15px;
+        margin-bottom: 22px; }
+        .main .main__row .main__column .item_inpunt input:hover {
+          border: 1px solid rgba(31, 32, 65, 0.5); }
+      .main .main__row .main__column .item_inpunt ::-webkit-input-placeholder {
+        color: rgba(31, 32, 65, 0.25);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px; }
+      .main .main__row .main__column .item_inpunt :-moz-placeholder {
+        /* Firefox 18- */
+        color: rgba(31, 32, 65, 0.25);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px; }
+      .main .main__row .main__column .item_inpunt ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: rgba(31, 32, 65, 0.25);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px; }
+      .main .main__row .main__column .item_inpunt :-ms-input-placeholder {
+        color: rgba(31, 32, 65, 0.25);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px; }
+      .main .main__row .main__column .item_inpunt button.drop__doun {
+        text-align: left;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 320px;
+        height: 44px;
+        background: #fff;
+        margin-bottom: 22px; }
+        .main .main__row .main__column .item_inpunt button.drop__doun span {
+          margin-left: 15px; }
+        .main .main__row .main__column .item_inpunt button.drop__doun img {
+          margin-right: 5px;
+          margin-left: 55%; }
+      .main .main__row .main__column .item_inpunt .date_dropdown {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        .main .main__row .main__column .item_inpunt .date_dropdown h3:nth-child(2) {
+          margin-right: 32px; }
+        .main .main__row .main__column .item_inpunt .date_dropdown button.date_drop__down {
+          display: inline-block;
+          width: 150px;
+          height: 44px;
+          background: #FFFFFF;
+          border: 1px solid rgba(31, 32, 65, 0.25);
+          border-radius: 4px;
+          margin-bottom: 40px; }
+          .main .main__row .main__column .item_inpunt .date_dropdown button.date_drop__down span {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(31, 32, 65, 0.75); }
+          .main .main__row .main__column .item_inpunt .date_dropdown button.date_drop__down img {
+            margin-right: 5px;
+            margin-left: 23%; }
+      .main .main__row .main__column .item_inpunt .filter_date_dropdown button.lilter__date, .main .main__row .main__column .item_inpunt .filter_date_dropdown input {
+        position: relative;
+        width: 266px;
+        height: 44px;
+        background: #FFFFFF;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        text-align: left;
+        margin-bottom: 40px; }
+        .main .main__row .main__column .item_inpunt .filter_date_dropdown button.lilter__date span, .main .main__row .main__column .item_inpunt .filter_date_dropdown input span {
+          margin-left: 15px;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 24px; }
+        .main .main__row .main__column .item_inpunt .filter_date_dropdown button.lilter__date img, .main .main__row .main__column .item_inpunt .filter_date_dropdown input img {
+          position: absolute;
+          right: 10px;
+          top: 17px; }
+    .main .main__row .main__column .checkbox_buttons {
+      display: flex;
+      flex-direction: column; }
 
 .footer .footer__row {
   padding-top: 104px;
@@ -559,6 +652,27 @@ template {
       .footer .footer__row .row__line .icon img {
         margin-left: 20px; }
 
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/Montserrat-ExtraBold.7da6219e.ttf); }
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/Montserrat-Bold.9b37bed2.ttf), url(/Montserrat-Bold.b2197310.eot), url(/Montserrat-Bold.fdf42c85.svg), url(/Montserrat-Bold.9aad7c46.woff); }
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/Montserrat-Regular.0f79340e.ttf), url(/Montserrat-Regular.0995919b.svg), url(/Montserrat-Regular.c7ae4452.woff), url(/Montserrat-SemiBold.0dcf99fc.otf); }
+
 body {
   font-family: "Montserrat";
   font-style: normal;
@@ -585,11 +699,14 @@ h2 {
   color: #1f2041; }
 
 h3 {
+  display: inline-block;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  color: #1f2041; }
+  color: #1f2041;
+  margin-bottom: 5px;
+  margin-top: 0; }
 
 .container {
   margin: 0 auto;

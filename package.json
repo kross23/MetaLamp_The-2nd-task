@@ -4,7 +4,9 @@
   "description": "MetaLamp Frontend 2 step education",
   "main": "index.js",
   "scripts": {
+    "cleanup": "rm -rf .cache dist",
     "dev": "parcel ./src/index.pug -p 4200 --open",
+    "devl": "npm run cleanup && parcel ./src/index.pug -p 4200 --open",
     "build": "parcel build ./src/index.html"
   },
   "author": "kross",

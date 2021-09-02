@@ -4,11 +4,11 @@ section.main
                 .main__column
                     .item_inpunt
                         h3 Text Field
-                        span Default
+                        span.title_input Default
                         input(type="text", placeholder="email")
                    
                         h3 Text Field
-                        span Hover / Focus
+                        span.title_input Hover / Focus
                         input(type="text", placeholder="This is pretty awesome")
                     
                         h3 Dropdown
@@ -41,14 +41,54 @@ section.main
                     .checkbox_buttons
                         h3 Checkbox Buttons
                         .checkbox
-                            input( type="checkbox" class=".checkbox_input" name="c1" id="c1")
+                            input( type="checkbox" class="checkbox_input"  id="c1")
                             label(for="c1" class="checkbox_label") Можно курить
-                            //- input(type="radio" name="r1" id="r1")
-                            //- label(for="r1") Radio
-                            //- input(type="checkbox" class="switch" name="s1" id="s1")
-                            //- label( for="s1") Switch
-                            
-                
+                        .checkbox
+                            input( type="checkbox" class="checkbox_input"  id="c2")
+                            label(for="c2" class="checkbox_label") Можно с питомцами
+                        .checkbox
+                            input( type="checkbox" class="checkbox_input"  id="c3")
+                            label(for="c3" class="checkbox_label") Можно пригласить гостей (до 10 человек)
+
+                        .radiobox
+                            h3 Radio Buttons
+                        .radio_row
+                            .radiobox  
+                                input(type="radio" class="radio_input" name="male" id="r1")
+                                label(for="r1" class="radio_label" ) Мужчина
+                            .radiobox 
+                                input(type="radio" class="radio_input" name="male" id="s1")
+                                label( for="s1" class="radio_label") Женщин
+                        .toggle
+                            h3 Toggle
+                            .toggle_box
+                                input( type="checkbox" class="toggle_input"  id="f1")
+                                label(for="f1" class="toggle_label") Получать спецпредложения
+                            .toggle_box
+                                input( type="checkbox" class="toggle_input"  id="f1")
+                                label(for="f1" class="toggle_label") Получать спецпредложения
+                        .like_button 
+                            h3 rate button
+                            .stars
+                                .star
+                                .star
+                                .star
+                                .star
+                                .star_borber
+                            .stars
+                                .star
+                                .star
+                                .star
+                                .star
+                                .star
+                    
                 
                 .main__column
-                    input(type="text")
+                    .range_slider
+                        h3 Range Slider
+                        span 5 000₽ - 10 000₽
+                        .slider_ranges 
+                            input(type="range", class="range1" name="price")
+                            input(type="range", class="range2" name="price")
+//C:\Users\Пользователь\JavaScript\html-tasck\public
+//../../public/images/star_border.svg

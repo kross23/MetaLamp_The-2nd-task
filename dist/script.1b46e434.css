@@ -581,10 +581,10 @@ template {
         margin-top: 10px; }
         @supports (-webkit-appearance: none) or (-moz-appearance: none) {
           .main .main__row .main__column .checkbox_buttons .checkbox input[type='checkbox'],
-          .main .main__row .main__column .checkbox_buttons .checkbox input[type='radio'] {
+          .main .main__row .main__column .checkbox_buttons .checkbox input[type='radio'],
+          .main .main__row .main__column .checkbox_buttons .checkbox input[type='range'] {
             -webkit-appearance: none;
-            -moz-appearance: none;
-            position: absolute; } }
+            -moz-appearance: none; } }
         .main .main__row .main__column .checkbox_buttons .checkbox .checkbox_input:checked + .checkbox_label:after {
           opacity: 1; }
         .main .main__row .main__column .checkbox_buttons .checkbox .checkbox_label {
@@ -633,10 +633,10 @@ template {
             margin-left: 20px; }
           @supports (-webkit-appearance: none) or (-moz-appearance: none) {
             .main .main__row .main__column .checkbox_buttons .radio_row .radiobox input[type='checkbox'],
-            .main .main__row .main__column .checkbox_buttons .radio_row .radiobox input[type='radio'] {
+            .main .main__row .main__column .checkbox_buttons .radio_row .radiobox input[type='radio'],
+            .main .main__row .main__column .checkbox_buttons .radio_row .radiobox input[type='range'] {
               -webkit-appearance: none;
-              -moz-appearance: none;
-              position: absolute; } }
+              -moz-appearance: none; } }
           .main .main__row .main__column .checkbox_buttons .radio_row .radiobox .radio_input:checked + .radio_label:after {
             opacity: 1; }
           .main .main__row .main__column .checkbox_buttons .radio_row .radiobox .radio_input:checked + .radio_label {
@@ -674,10 +674,10 @@ template {
           position: relative; }
           @supports (-webkit-appearance: none) or (-moz-appearance: none) {
             .main .main__row .main__column .checkbox_buttons .toggle .toggle_box input[type='checkbox'],
-            .main .main__row .main__column .checkbox_buttons .toggle .toggle_box input[type='radio'] {
+            .main .main__row .main__column .checkbox_buttons .toggle .toggle_box input[type='radio'],
+            .main .main__row .main__column .checkbox_buttons .toggle .toggle_box input[type='range'] {
               -webkit-appearance: none;
-              -moz-appearance: none;
-              position: absolute; } }
+              -moz-appearance: none; } }
           .main .main__row .main__column .checkbox_buttons .toggle .toggle_box .toggle_input {
             position: absolute;
             width: 40px;
@@ -728,6 +728,46 @@ template {
             height: 20px;
             width: 20px;
             background: url(/star_border.51e567c7.svg) no-repeat center; }
+    .main .main__row .main__column .range_slider .slider_ranges {
+      position: relative;
+      width: 266px;
+      height: 12px; }
+      .main .main__row .main__column .range_slider .slider_ranges .slider-track {
+        position: relative;
+        width: 266px;
+        height: 6px;
+        background: #FFFFFF;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 3px;
+        margin-top: 23px; }
+      .main .main__row .main__column .range_slider .slider_ranges .pointer1 {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        left: 173px;
+        top: -4px;
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        border: 2px solid #FFFFFF;
+        border-radius: 10px;
+        z-index: 9999; }
+      .main .main__row .main__column .range_slider .slider_ranges .pointer2 {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        border: 2px solid #FFFFFF;
+        border-radius: 10px;
+        top: -4px;
+        left: 60px;
+        z-index: 9999; }
+      .main .main__row .main__column .range_slider .slider_ranges .track {
+        position: absolute;
+        width: 115px;
+        height: 6px;
+        top: 0.8px;
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        border-radius: 3px;
+        left: 69px; }
 
 .footer .footer__row {
   padding-top: 104px;

@@ -1,7 +1,8 @@
 import  '../assets/scss/style.scss';
-
-
+import range from './range';
 'use strict';
-
-
-console.log('hel');
+const appjs = () => {
+	range();
+	console.log('hel');
+};
+appjs();

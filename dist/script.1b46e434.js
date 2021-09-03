@@ -189,15 +189,121 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\..\\public\\images\\check.svg":[["check.ff04f76d.svg","../public/images/check.svg"],"../public/images/check.svg"],"./..\\..\\..\\public\\images\\star.svg":[["star.6f908d4b.svg","../public/images/star.svg"],"../public/images/star.svg"],"./..\\..\\..\\public\\images\\star_border.svg":[["star_border.51e567c7.svg","../public/images/star_border.svg"],"../public/images/star_border.svg"],"./..\\fonts\\montserrat\\Montserrat-ExtraBold.ttf":[["Montserrat-ExtraBold.7da6219e.ttf","assets/fonts/montserrat/Montserrat-ExtraBold.ttf"],"assets/fonts/montserrat/Montserrat-ExtraBold.ttf"],"./..\\fonts\\montserrat\\Montserrat-Bold.ttf":[["Montserrat-Bold.9b37bed2.ttf","assets/fonts/montserrat/Montserrat-Bold.ttf"],"assets/fonts/montserrat/Montserrat-Bold.ttf"],"./..\\fonts\\montserrat\\Montserrat-Bold.eot":[["Montserrat-Bold.b2197310.eot","assets/fonts/montserrat/Montserrat-Bold.eot"],"assets/fonts/montserrat/Montserrat-Bold.eot"],"./..\\fonts\\montserrat\\Montserrat-Bold.svg":[["Montserrat-Bold.fdf42c85.svg","assets/fonts/montserrat/Montserrat-Bold.svg"],"assets/fonts/montserrat/Montserrat-Bold.svg"],"./..\\fonts\\montserrat\\Montserrat-Bold.woff":[["Montserrat-Bold.9aad7c46.woff","assets/fonts/montserrat/Montserrat-Bold.woff"],"assets/fonts/montserrat/Montserrat-Bold.woff"],"./..\\fonts\\montserrat\\Montserrat-Regular.ttf":[["Montserrat-Regular.0f79340e.ttf","assets/fonts/montserrat/Montserrat-Regular.ttf"],"assets/fonts/montserrat/Montserrat-Regular.ttf"],"./..\\fonts\\montserrat\\Montserrat-Regular.svg":[["Montserrat-Regular.0995919b.svg","assets/fonts/montserrat/Montserrat-Regular.svg"],"assets/fonts/montserrat/Montserrat-Regular.svg"],"./..\\fonts\\montserrat\\Montserrat-Regular.woff":[["Montserrat-Regular.c7ae4452.woff","assets/fonts/montserrat/Montserrat-Regular.woff"],"assets/fonts/montserrat/Montserrat-Regular.woff"],"./..\\fonts\\montserrat\\Montserrat-SemiBold.otf":[["Montserrat-SemiBold.0dcf99fc.otf","assets/fonts/montserrat/Montserrat-SemiBold.otf"],"assets/fonts/montserrat/Montserrat-SemiBold.otf"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"script/script.js":[function(require,module,exports) {
+},{"./..\\..\\..\\public\\images\\check.svg":[["check.ff04f76d.svg","../public/images/check.svg"],"../public/images/check.svg"],"./..\\..\\..\\public\\images\\star.svg":[["star.6f908d4b.svg","../public/images/star.svg"],"../public/images/star.svg"],"./..\\..\\..\\public\\images\\star_border.svg":[["star_border.51e567c7.svg","../public/images/star_border.svg"],"../public/images/star_border.svg"],"./..\\fonts\\montserrat\\Montserrat-ExtraBold.ttf":[["Montserrat-ExtraBold.7da6219e.ttf","assets/fonts/montserrat/Montserrat-ExtraBold.ttf"],"assets/fonts/montserrat/Montserrat-ExtraBold.ttf"],"./..\\fonts\\montserrat\\Montserrat-Bold.ttf":[["Montserrat-Bold.9b37bed2.ttf","assets/fonts/montserrat/Montserrat-Bold.ttf"],"assets/fonts/montserrat/Montserrat-Bold.ttf"],"./..\\fonts\\montserrat\\Montserrat-Bold.eot":[["Montserrat-Bold.b2197310.eot","assets/fonts/montserrat/Montserrat-Bold.eot"],"assets/fonts/montserrat/Montserrat-Bold.eot"],"./..\\fonts\\montserrat\\Montserrat-Bold.svg":[["Montserrat-Bold.fdf42c85.svg","assets/fonts/montserrat/Montserrat-Bold.svg"],"assets/fonts/montserrat/Montserrat-Bold.svg"],"./..\\fonts\\montserrat\\Montserrat-Bold.woff":[["Montserrat-Bold.9aad7c46.woff","assets/fonts/montserrat/Montserrat-Bold.woff"],"assets/fonts/montserrat/Montserrat-Bold.woff"],"./..\\fonts\\montserrat\\Montserrat-Regular.ttf":[["Montserrat-Regular.0f79340e.ttf","assets/fonts/montserrat/Montserrat-Regular.ttf"],"assets/fonts/montserrat/Montserrat-Regular.ttf"],"./..\\fonts\\montserrat\\Montserrat-Regular.svg":[["Montserrat-Regular.0995919b.svg","assets/fonts/montserrat/Montserrat-Regular.svg"],"assets/fonts/montserrat/Montserrat-Regular.svg"],"./..\\fonts\\montserrat\\Montserrat-Regular.woff":[["Montserrat-Regular.c7ae4452.woff","assets/fonts/montserrat/Montserrat-Regular.woff"],"assets/fonts/montserrat/Montserrat-Regular.woff"],"./..\\fonts\\montserrat\\Montserrat-SemiBold.otf":[["Montserrat-SemiBold.0dcf99fc.otf","assets/fonts/montserrat/Montserrat-SemiBold.otf"],"assets/fonts/montserrat/Montserrat-SemiBold.otf"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"script/range.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var range = function range() {
+  var $point1 = document.querySelector('.pointer1');
+  var $point2 = document.querySelector('.pointer2');
+  var $ranges = document.querySelector('.slider_ranges');
+  var $track = document.querySelector('.track');
+  var $price = document.querySelectorAll('.price>span');
+  console.log('$ranges: ', $price[0].innerHTML);
+  console.log('$ranges: ', $price[2]);
+
+  $point2.onmousedown = function (event) {
+    event.preventDefault(); // предотвратить запуск выделения (действие браузера)
+
+    var shiftX = event.clientX - $point2.getBoundingClientRect().left;
+    var pointrigth = $point1.getBoundingClientRect().left - $ranges.getBoundingClientRect().left; // shiftY здесь не нужен, слайдер двигается только по горизонтали
+
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
+
+    function onMouseMove(event) {
+      var newLeft = event.clientX - shiftX - $ranges.getBoundingClientRect().left; // курсор вышел из слайдера => оставить бегунок в его границах.
+
+      if (newLeft < 0) {
+        newLeft = 0;
+      } //const rightEdge = $ranges.offsetWidth - $point2.offsetWidth;
+
+
+      if (newLeft > pointrigth) {
+        newLeft = pointrigth - 10;
+      }
+
+      $point2.style.left = newLeft + 'px';
+      $track.style.left = newLeft + 'px';
+      $track.style.width = pointrigth - newLeft + 5 + 'px';
+    }
+
+    function onMouseUp() {
+      document.removeEventListener('mouseup', onMouseUp);
+      document.removeEventListener('mousemove', onMouseMove);
+    }
+  };
+
+  $point2.ondragstart = function () {
+    return false;
+  }; /////////////////////////////////
+
+
+  $point1.onmousedown = function (event) {
+    event.preventDefault(); // предотвратить запуск выделения (действие браузера)
+
+    var shiftX = event.clientX - $point1.getBoundingClientRect().left;
+    var pointleft = $point2.getBoundingClientRect().left - $ranges.getBoundingClientRect().left; // shiftY здесь не нужен, слайдер двигается только по горизонтали
+
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
+
+    function onMouseMove(event) {
+      var newLeft = event.clientX - shiftX - $ranges.getBoundingClientRect().left; // курсор вышел из слайдера => оставить бегунок в его границах.
+
+      if (newLeft < pointleft) {
+        //
+        newLeft = pointleft + 10;
+      }
+
+      var rightEdge = $ranges.offsetWidth - $point1.offsetWidth;
+      var rightEdge1 = $ranges.offsetWidth - $point1.getBoundingClientRect().left;
+      var rightEdge2 = $ranges.offsetWidth - $point2.getBoundingClientRect().left;
+
+      if (newLeft > rightEdge) {
+        newLeft = rightEdge;
+      }
+
+      $point1.style.left = newLeft + 'px';
+      $track.style.width = Math.abs(rightEdge1 - rightEdge2) + 5 + 'px';
+    }
+
+    function onMouseUp() {
+      document.removeEventListener('mouseup', onMouseUp);
+      document.removeEventListener('mousemove', onMouseMove);
+    }
+  };
+
+  $point1.ondragstart = function () {
+    return false;
+  };
+};
+
+var _default = range; //event.which == 1
+
+exports.default = _default;
+},{}],"script/script.js":[function(require,module,exports) {
 "use strict";
 
 require("../assets/scss/style.scss");
 
+var _range = _interopRequireDefault(require("./range"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 'use strict';
 
-console.log('hel');
-},{"../assets/scss/style.scss":"assets/scss/style.scss"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var appjs = function appjs() {
+  (0, _range.default)();
+  console.log('hel');
+};
+
+appjs();
+},{"../assets/scss/style.scss":"assets/scss/style.scss","./range":"script/range.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -225,7 +331,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63512" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51972" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

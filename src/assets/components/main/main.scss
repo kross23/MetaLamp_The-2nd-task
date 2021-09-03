@@ -17,10 +17,11 @@
 @mixin input_type {
     @supports(-webkit-appearance: none) or (-moz-appearance: none) {
       input[type='checkbox'],
-      input[type='radio'] {
+      input[type='radio'],
+      input[type='range'] {
         -webkit-appearance: none;
         -moz-appearance: none;
-        position: absolute;
+       // position: absolute;
       }
     }
 }
@@ -321,7 +322,53 @@
             
             }
             .range_slider{
-             span{}
+
+              .slider_ranges{
+                  position: relative;
+                  width: 266px;
+                  height: 12px;
+                  .slider-track{
+                    position: relative;
+                    width: 266px;
+                    height: 6px; 
+                    background: #FFFFFF;
+                    border: 1px solid $dark-shade-25;
+                    border-radius: 3px;
+                    margin-top: 23px;
+                  }
+                  .pointer1{
+                    position: absolute;
+                    width: 12px;
+                    height: 12px;
+                    left: 173px;
+                    top: -4px;
+                    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+                    border: 2px solid #FFFFFF;
+                    border-radius: 10px;
+                    z-index: 9999;
+                  }
+                  .pointer2{
+                    position: absolute;
+                    width: 12px;
+                    height: 12px;
+                    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+                    border: 2px solid #FFFFFF;
+                    border-radius: 10px;
+                    top: -4px;
+                    left: 60px;
+                    z-index: 9999;
+                  }
+                  .track{
+                    position: absolute;
+                    width: 115px;
+                    height: 6px;
+                    top: 0.8px;
+                    
+                    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+                    border-radius: 3px;
+                    left: 69px;
+                  }
+              }
             }
           }
         
